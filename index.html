@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conta Blox Fruits</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.discordapp.com/attachments/1093678909855367238/1247288007825031311/IMG_4305.webp?ex=665f7afa&is=665e297a&hm=a507c5ebc489aa40c1d1c7d98996d5aaa89c13e53b9a6adc5ed7b30d633b0031&" alt="Blox Fruits" class="title-image">
+        <div class="result">
+            <label for="username">Nome de Usuário:</label>
+            <div class="input-group">
+                <input type="text" id="username" readonly>
+                <button onclick="copyToClipboard('username')">
+                    <i class="fas fa-copy"></i> Copiar Nome
+                </button>
+            </div>
+        </div>
+        <div class="result">
+            <label for="password">Senha:</label>
+            <div class="input-group">
+                <input type="text" id="password" readonly>
+                <button onclick="copyToClipboard('password')">
+                    <i class="fas fa-copy"></i> Copiar Senha
+                </button>
+            </div>
+        </div>
+        <button class="generate-btn" onclick="generateAccount()">Gerar Conta</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
